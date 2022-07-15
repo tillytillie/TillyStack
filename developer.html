@@ -1,0 +1,91 @@
+<!DOCTYPE html public "-//W3C//DTD html 5.0 //en">
+
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta http-equiv="Refresh" content="0;url=index.html">------>
+    <title>Personal Page|Home</title>
+    <meta keyword="Personal Professional  Page, portfolio,  Landing page">
+    <meta name="description" content="Tilly Systems personal and professional website">
+    <!--------------------------------Web style link------------------>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!--------------------------------Custome style link------------------>
+    <link rel="stylesheet" href="personal.css">
+
+    <!--------------------------------JS style link------------------------->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--------------------------------JS style link------------------>
+
+</head>
+
+<body>
+    <!---------------------------------Header------------------------------------>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <a href="index.html" class="logo-color h4 bolder">TillyStack</a>
+                <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
+                <div id="navbarcollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto blockquote text-center">
+                        <li class="nav-item"><a href="#project" class="nav-link link-scroll logo-color">Projects</a></li>
+                        <li class="nav-item"><a href="#testimonial" class="nav-link link-scroll logo-color">Testimonies</a></li>
+                        <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=2348035583068" class="nav-link link-scroll logo-color">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="greeting-user">
+        </div>
+    </main>
+    <main>
+        <div class="container">
+            <div class="col-lg-8 col-md-8 col-sm-8 mx-auto main">
+                <img src="img/boye.png" class="personal-img">
+
+                <h4 class="personal-header-font">Hi! I am <span class="name-color">Tilly</span> Bobo a Creative Web Developer</h4>
+                <p class="text-justify">This is my official website to showcase my work related to UI design. I'm open for Hire and Joint or Individual project work </p>
+
+                <a href="https://www.github.com/tillytillie" class="btn btn-dark inline-list"><i class="fa fa-github"></i></a>
+                <a href="cv/hrm.pdf" class="btn btn-dark inline-list" download="Akinola Toheeb cv"><i class="fa fa-file"></i></a>
+                <a href="tel:+2348035583068" class="btn btn-dark inline-list"><i class="fa fa-phone"></i></a>
+                <a href="index.html" class="btn btn-dark inline-list"><i class="fa fa-briefcase"></i></a>
+                <a href="https://www.linkedin.com/in/akinola-toheeb-a59685197" class="btn btn-dark inline-list"><i class="fa fa-linkedin"></i></a>
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+
+    <script>
+        var myDate = new Date();
+        var hrs = myDate.getHours();
+        var greet;
+        if (hrs < 12)
+            greet = 'Good Morning';
+        else if (hrs >= 12 && hrs <= 17)
+            greet = 'Good Afternoon';
+        else if (hrs >= 17 && hrs <= 24)
+            greet = 'Good Evening';
+
+        document.getElementById('greeting-user').innerHTML =
+            '<b>' + greet + '</b> Welcome to TillyStack!';
+    </script>
+
+</body>
+
+</html>

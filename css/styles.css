@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #edf2fc;
+    box-shadow: 3px 3px 3px #075f53;
+}
+
+
+/* Header font  */
+
+.header-font {
+    font-family: 'Tangerine', cursive;
+    font-weight: 900;
+}
+
+
+/* Header color  */
+
+.header-color,
+.fa-bars,
+.header-link {
+    color: #17a2b8;
+}
+
+
+/* Header color hoover  */
+
+nav,
+li,
+a:hover {
+    color: rgba(250, 6, 6, 0.911);
+    text-decoration: none;
+}
+
+.logo-link {
+    font-size: 40px;
+}
+
+.badge-size {
+    font-size: 15px;
+}
+
+.border-alert-left {
+    border-left: 5px solid #17a2b8;
+}
+
+hr {
+    width: 30%;
+    height: 2px;
+    background-color: #17a2b8;
+    margin: auto
+}
+
+
+/* Shake Animation */
+
+.shake:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    /*animation-iteration-count: infinite;*/
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+/* What we deo image size  */
+
+.width-img {
+    width: 40%;
+    border-radius: 10%;
+}
+
+
+/* Recent Work */
+
+.work {
+    transition: transform .2s;
+}
+
+.work:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+@media (min-width: 480px) {
+    #project {
+        margin-top: 10px;
+    }
+}
+
+
+/* Button used to open the Whatsapp chat form - fixed at the bottom of the page */
+
+.open-button {
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 18px;
+}
+
+.open-button:hover {
+    color: red;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -ms-border-radius: 3px 0 0 3px;
+    -o-border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fa-heart {
+    color: red
+}
