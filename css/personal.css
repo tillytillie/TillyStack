@@ -6,7 +6,7 @@
 
 body {
   font-family: sans-serif;
-  background-image: url('../img/b1.jpg');
+  background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-  background-color: #edf2fc;
+  background-color: teal;
   opacity: 0.8;
   color: black;
 }
@@ -28,11 +28,34 @@ nav a {
 nav a:hover {
   color: white;
 }
-
+.tooltip::before {
+  content: attr(data-tooltip);
+}
 #greeting-user {
   text-align: center;
   font-weight: 900;
   font-size: 34px;
+}
+
+.typing-demo {
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .logo-font {
@@ -55,6 +78,7 @@ main {
   height: 230px;
   float: right;
   margin-top: 10px;
+  filter: drop-shadow(2px 4px 8px #000);
 }
 
 .name-color {
