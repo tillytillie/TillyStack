@@ -1,0 +1,208 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /*border: 1px solid red;*/
+}
+
+a:hover {
+  text-decoration: none;
+  color: #4ed6ee;
+}
+
+.promo {
+  margin-top: 50px;
+  width: 50%;
+}
+
+.discovery {
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  color: black;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.card {
+  box-shadow: inset 0 0 10px #000;
+  border-radius: 50px;
+  padding: 0px;
+}
+
+.card h4 {
+  margin-top: 20px;
+}
+
+.card p {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Our services */
+
+.services,
+#project {
+  text-align: center;
+  text-decoration: italic;
+  color: #0d7265;
+  margin-top: 30px;
+}
+
+.shake:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  /*animation-iteration-count: infinite;*/
+}
+
+/* Our Services shake  */
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* Shadow effect */
+
+.shadow {
+  -webkit-box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05),
+    0px 29px 95px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05),
+    0px 29px 95px 0px rgba(0, 0, 0, 0.16);
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+.open-button {
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+}
+
+.special-offer {
+  color: black;
+  line-height: 1.9em;
+}
+
+.social {
+  background-color: #edf2fc;
+}
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .promo {
+    width: 25%;
+  }
+  nav ul li {
+    border-bottom: 1px solid #0d7265;
+    width: 75%;
+    margin: auto;
+    padding: auto;
+  }
+  .img-slide {
+    width: 25%;
+    height: 20%;
+  }
+  .display {
+    width: 15%;
+    display: inline;
+  }
+  .recent-img {
+    width: 80%;
+  }
+  .card {
+    margin-top: 20px;
+  }
+}
+
+.logo-color {
+  color: black;
+  font-weight: 500;
+}
+
+.width {
+  width: 30%;
+}
+
+.work {
+  transition: transform 0.2s;
+}
+
+.work:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+/*Landing page CSS*/
+
+.info {
+  margin-top: 10%;
+}
+
+.info h1 {
+  font-size: 70px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+span {
+  color: red;
+}
+
+.info p {
+  color: #606163;
+  line-height: 22px;
+}
+
+.social-icons {
+  color: black;
+}
